@@ -17,8 +17,8 @@ function App() {
     
       <h1 className='bg-green-500 mb-1'>Vite + React</h1>
     
-  <Cards channel="chaiaurcode" someObj={myObj} someArrt={newArr}/>
-  <Cards/>
+  <Cards username ="chaiaurcode" btnText="Click Now" someObj={myObj} someArrt={newArr}/>
+  <Cards username="Kishwar" />
     </>
   )
 }
