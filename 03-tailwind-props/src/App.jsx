@@ -10,13 +10,14 @@ function App() {
     username: "Kishwar",
     age:30
   }
+  let newArr =[1,2,3];
 
   return (
     <>
     
       <h1 className='bg-green-500 mb-1'>Vite + React</h1>
     
-  <Cards channel="chaiaurcode" someObj={myObj}/>
+  <Cards channel="chaiaurcode" someObj={myObj} someArrt={newArr}/>
   <Cards/>
     </>
   )
