@@ -5,19 +5,22 @@ function App() {
   let [counter, setCounter] = useState(15);
 
   // let counter = 5;
-// Add vaue funtion 
+
+  // Add vaue funtion 
   const addValue = () => {
 
     // counter = counter + 1
-
-    setCounter(counter + 1);
-//console.log("Value added", counter);
+    if (counter < 20) {
+      setCounter(counter + 1);
+      //console.log("Value added", counter);
+    }
   }
 
   // Remve Value funtion 
-  const removeValue = () =>{
-    setCounter(counter - 1);
-
+  const removeValue = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
   }
   return (
     <>
